@@ -15,6 +15,7 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/realization/FRX11WindowsManager/CMakeLists.t
 
 set(header
         ${header}
+        ${CMAKE_CURRENT_SOURCE_DIR}/window.h
         )
 
 set(src
