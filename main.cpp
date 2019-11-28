@@ -6,6 +6,9 @@
 
 int main()
 {
-    FRWindows::Window(800, 600, "window");
+    FRWindows::Window window(800, 600, "window");
+    while (true) {
+        //EventHandler.processEvents();
+    }
     return 0;
 }
