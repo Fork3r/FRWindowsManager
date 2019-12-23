@@ -10,6 +10,7 @@ find_path(FR_X11_WINDOWS_MANAGER_PATH "window.h" ${CMAKE_CURRENT_SOURCE_DIR}/rea
 if((NOT FR_X11_WINDOWS_MANAGER_PATH) OR (NOT EXISTS ${FR_X11_WINDOWS_MANAGER_PATH}))
     execute_process(COMMAND git clone git@github.com:Fork3r/FRX11WindowsManager.git -b dev
             ${CMAKE_CURRENT_SOURCE_DIR}/realization/FRX11WindowsManager)
+    set(FR_X11_WINDOWS_MANAGER_PATH ${CMAKE_CURRENT_SOURCE_DIR}/realization/FRX11WindowsManager)
 endif()
 include(${CMAKE_CURRENT_SOURCE_DIR}/realization/FRX11WindowsManager/CMakeLists.txt)
 
